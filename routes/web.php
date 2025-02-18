@@ -86,3 +86,11 @@ Route::resource('photos', PhotoController::class)->except([
     'update',
     'destroy'
 ]);
+
+// View
+
+// Route::get('/greeting', function () {
+//     return view('blog.hello', ['name' => 'Atthalaric Nero Muchtar']);
+// });
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
